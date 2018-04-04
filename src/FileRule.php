@@ -1,5 +1,7 @@
 <?php
 
+namespace auramel\validation;
+
 /**
  * Class $this
  * @method $this extensions(array|string $value)

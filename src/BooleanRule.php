@@ -1,5 +1,7 @@
 <?php
 
+namespace auramel\validation;
+
 /**
  * Class BooleanRule
  * @method $this trueValue(bool $value)

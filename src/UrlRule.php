@@ -1,5 +1,7 @@
 <?php
 
+namespace auramel\validation;
+
 /**
  * Class UrlRule
  * @method $this validSchemes(array $value)

@@ -1,5 +1,7 @@
 <?php
 
+namespace auramel\validation;
+
 /**
  * Class RequiredValue
  * @method $this requiredValue(mixed $value)

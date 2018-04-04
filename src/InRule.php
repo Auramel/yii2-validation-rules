@@ -1,5 +1,7 @@
 <?php
 
+namespace auramel\validation;
+
 /**
  * Class InRule
  * @method $this range(array|\Traversable|\Closure $value)

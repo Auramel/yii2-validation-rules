@@ -1,5 +1,7 @@
 <?php
 
+namespace auramel\validation;
+
 /**
  * Class IpRule
  * @method $this ipv4(bool $value)

@@ -1,5 +1,7 @@
 <?php
 
+namespace auramel\validation;
+
 /**
  * Class StringRule
  * @method $this length(int|array $value)

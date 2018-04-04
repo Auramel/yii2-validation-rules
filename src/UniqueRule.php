@@ -1,5 +1,7 @@
 <?php
 
+namespace auramel\validation;
+
 /**
  * Class UniqueRule
  * @method $this targetClass(string $value)

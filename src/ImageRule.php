@@ -1,5 +1,7 @@
 <?php
 
+namespace auramel\validation;
+
 /**
  * Class ImageRule
  * @method $this minWidth(int $value)

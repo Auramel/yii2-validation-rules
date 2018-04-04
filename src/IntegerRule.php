@@ -1,5 +1,7 @@
 <?php
 
+namespace auramel\validation;
+
 /**
  * Class IntegerRule
  * @method $this min(int $value)

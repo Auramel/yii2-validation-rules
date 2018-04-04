@@ -1,5 +1,7 @@
 <?php
 
+namespace auramel\validation;
+
 /**
  * Class BaseRule
  * @method $this skipOnEmpty(bool $value)
