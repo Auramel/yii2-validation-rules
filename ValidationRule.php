@@ -36,9 +36,9 @@ class ValidationRule
 {
     /**
      * @param array $attributes
-     * @return static
+     * @return $this
      */
-    public static function attributes(array $attributes): ValidationRule
+    public static function attributes(array $attributes): object
     {
         $object = new static();
 
@@ -49,9 +49,9 @@ class ValidationRule
 
     /**
      * @param string $attribute
-     * @return static
+     * @return $this
      */
-    public static function attribute(string $attribute): ValidationRule
+    public static function attribute(string $attribute): object
     {
         $object = new static();
 
@@ -63,9 +63,9 @@ class ValidationRule
     /**
      * @param string $name
      * @param array $arguments
-     * @return ValidationRule
+     * @return $this
      */
-    public function __call(string $name, array $arguments): ValidationRule
+    public function __call(string $name, array $arguments): object
     {
         if (isset($arguments[0])) {
             $name = [
@@ -96,6 +96,17 @@ class ValidationRule
         }
 
         return $result;
+    }
+
+    /**
+     * @param string|callable $value
+     * @return BaseRule
+     */
+    public function custom($value): object
+    {
+        array_push($this->rules, $value);
+
+        return $this;
     }
 
     /** @var array */
