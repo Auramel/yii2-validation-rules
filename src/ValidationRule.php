@@ -15,7 +15,10 @@
  * @method CaptchaRule captcha()
  * @method CompareRule compare()
  * @method DateRule date()
+ * @method DefaultRule default()
  * @method DoubleRule double()
+ * @method EachRule each()
+ * @method EmailRule email()
  * @method ExistRule exist()
  * @method FileRule file()
  * @method FilterRule filter()
@@ -31,6 +34,7 @@
  * @method TrimRule trim()
  * @method UniqueRule unique()
  * @method UrlRule url()
+ * @link https://www.yiiframework.com/doc/guide/2.0/en/tutorial-core-validators
  */
 class ValidationRule
 {
