@@ -13,7 +13,7 @@ public function rules()
 {
     return [
         ValidationRule::attributes(['foo', 'bar'])->required()->build(),
-        ValidationRule::atribute('foo')->string()->min(6)->on(self::SCENARIO_DEFAULT)
+        ValidationRule::atribute('foo')->string()->min(6)->on(self::SCENARIO_DEFAULT)->build()
     ];
 }
 ```
